@@ -1,0 +1,46 @@
+html
+    head
+        style
+            include ../css/style.css
+        title= title
+    header
+    body
+        div(class='container')
+            div(class='main-content')
+                nav
+                    h2= 'Навигация'
+                    a(href='/')= 'Главная'
+                    br
+                    br
+                    a(href='/add-country')= 'Новая страна'
+                    br
+                    br
+                    a(href='/countries-with-count-people')= 'Информация о странах по населению'
+                div(class='content-wrap')
+                    h1(align='center')= 'Таблица стран'
+                    table(border="1" style="border-collapse: collapse" cellpadding="5")
+                        tr
+                            th= 'Название'
+                            th= 'Год основания'
+                            th= 'Население'
+                            th= 'Столица'
+                            th= 'Изменить'
+                        - for (let index = 0; index < countries.length; index++)
+                            tr
+                                td= countries[index].countryName
+                                td= countries[index].countryYearCreating
+                                td= countries[index].countryCountPeople
+                                td= countries[index].countryCapital
+                                td
+                                     a(href='/edit-country?_id=' + countries[index]._id)= 'Изменить'
+                    form(action='/delete-country-by-count-people' method='post')
+                        br
+                        label= 'Введите население для удаления'
+                        br
+                        input(type="number" placeholder="Население" id="countryCountPeople" name="countryCountPeople" required)
+                        br
+                        button='Удалить по населению'
+                    br
+                aside
+                    h2= 'Здесь может быть Ваша реклама'
+    footer= '2019 © 1+1 media'

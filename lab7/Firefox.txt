@@ -1,0 +1,3 @@
+Отключение междоменной безопасности в Firefox
+about:config
+security.fileuri.strict_origin_policy;false

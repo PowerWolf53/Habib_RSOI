@@ -1,0 +1,93 @@
+body{
+   margin: auto;
+   height: 100%;
+   width: 100%;
+   background-color: #ffd1d7;
+}
+
+header{
+    background: linear-gradient(to right, #E6E6FA, #FFF8DC);
+	position: relative;
+	width: 83%;
+    background-color: #f7caff;
+	height: 10%;
+	text-align: center;
+	margin: auto;
+    border: 2px solid black;
+}
+
+article{	
+    padding: 10px;
+    background: url("../resouce/3.jpg") 100% 15%;
+	width: 81.5%;
+    height: 50%;
+	text-align: center;
+	border-left: 2px solid #34011e;
+	border-right: 2px solid #34011e;
+    margin-left: 8.4%;
+}
+
+label{
+	font-family: 'Lobster',cursive;
+    font-size: 15px;
+    float:left;
+	color: #053237;
+}
+
+.input-style
+{
+	border: 1px solid black;
+	opacity: 0.7;
+	border-radius: 3px;
+	padding: 5px; 
+	margin-bottom:20px;
+    width:280px;
+	margin-left: 70px;
+    	
+}
+
+/*.radio-style{
+	opacity: 0.9; 
+	margin-bottom:10px;
+    margin-left: 40px;
+}*/
+
+.textarea-style{
+	border: 2px solid black;
+	opacity: 0.7;
+	border-radius: 5px;
+	padding: 8px; 
+	margin-bottom:20px;
+    width: 400px;
+	height: 60px;
+	
+}
+
+
+footer
+{
+   background: linear-gradient(to right, #E6E6FA, #FFF8DC);
+    text-align: center;
+    border: 2px solid black;
+    color:darkblue;
+    width: 83%;
+    margin-left: 8.4%;
+
+}
+
+.field /* для выравнивания полей формы */
+{  
+    
+    text-align:right;
+}
+.main  /* для выравнивания полей формы */
+{
+    float:left
+}
+
+/*#myTable
+{
+    margin: 10px;
+    display: none;
+    float:right;  
+}*/

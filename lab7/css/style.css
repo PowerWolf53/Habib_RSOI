@@ -1,0 +1,154 @@
+
+body {
+    min-height:100%;
+    margin:0;
+    padding:0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.wrap {
+    min-height:calc(100vh - 50px);
+}
+
+.header {
+    color: white;
+    background-color: lime;
+    min-height:40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+}
+
+.header_caption {
+    margin:0px;
+    font-size: 1.5em;
+}
+
+.footer {
+    min-height:50px;
+    color: white;
+    background-color: black;
+}
+
+.footer_caption {
+    padding-top:15px;
+    padding-left:20px;
+    margin:0px;
+    font-size: 1em;
+}
+
+#form {
+    height: 330px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radio {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textfield {
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100px;
+  background-color: lime;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+p#message {
+    color: lime;
+}
+
+#loader {
+    height: 80px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#error {
+    height: 120px;
+    width: 400px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.error, h1.error {
+    color: tomato;
+}
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:200px auto 0px auto;
+    width:300px;
+    height: 300px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}

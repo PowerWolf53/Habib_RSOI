@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+        <script src="../js/script.js"> </script>
+    <title>Объекты JS</title>
+   </head>
+  <body onload="loadPage()">
+<form name="myForm" target="_blank" id="myForm">
+            <div class = "main">
+             <div class = "field">
+       <label>Фамилия:</label>
+          <input class = "input-style" type = "text" name = "fio" id = "fio_" placeholder="Введите фамилию" >
+        <br>
+          <label>Номер машины:</label>
+        <input class = "input-style" type = "text" name = "number" id = "number_" placeholder="Введите номер" >
+        <br>
+        <label>Время:</label>
+        <input class = "input-style" type = "text" name = "time" id = "time" placeholder="Введите время">
+        <br>
+     <label>Название машины</label>
+<input class = "input-style" type = "text" name = "name" id = "name" placeholder="Марка">
+    <br>
+<label>ID</label>
+ <select class = "input-style" id="mySelect" name="mySelect">
+ </select>
+      <br>
+
+<input onClick="addNewRow()" type="button" value="Новая запись">
+<input onClick="f()" type="button" value="Очистить">
+    <input onClick="deleteID()" type="button" value="Удалить по ИД">
+ <input onClick="showTable()" type="button" value="Просмотр">   
+</div> 
+    <input onClick="minmax()" type="button"  value="Min Max">
+<input type="button" value="Свойство"  onclick="newProperty()">
+        </div> 
+      </form>
+    <table border="1" width="100%" cellpadding="5" id="myTable">
+            </table>
+          <table border="1" width="100%" cellpadding="5" id="myTable1">
+            </table>
+  </body>
+</html>

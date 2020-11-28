@@ -1,0 +1,40 @@
+html
+    head
+        style
+            include ../css/style.css
+        title= title
+    header
+    body
+        div(class='container')
+            div(class='main-content')
+                nav
+                    h2= 'Навигация'
+                    a(href='/')= 'Главная'
+                    br
+                    br
+                    a(href='/add-country')= 'Новая страна'
+                div(class='content-wrap')
+                    h2= 'Добавление страны в каталог'
+                    form(action='/add-country-post' method='post')
+                        label= 'Введите название'
+                        br
+                        input(type="text" placeholder="Название страны" id="countryName" name="countryName" required)
+                        br
+                        label= 'Введите год создания'
+                        br
+                        input(type='number' placeholder="Год создания" id="countryYearCreating" name="countryYearCreating" required)
+                        br
+                        label= 'Введите количество населения'
+                        br
+                        input(type="number" placeholder="Количество населения" id="countryCountPeople" name="countryCountPeople" required)
+                        br
+                        label= 'Введите столицу'
+                        br
+                        input(type='text' placeholder="Столица" id="countryCapital" name="countryCapital" required)
+                        br
+                        button= 'Отправить'
+                aside
+                    h2= 'Здесь может быть Ваша реклама'
+    footer= '2019 © 1+1 media'
+
+

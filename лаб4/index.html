@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <p class="header">Most pupular cars</p>
+    </header>
+    <main>
+        <article>
+            <table id="myTable">
+                <tr>
+                    <th>BMW</th>
+                    <th>AUDI</th>
+                </tr>
+                <tr>
+                    <th>M1</th>
+                    <th>A1</th>
+                </tr>
+                <tr>
+                    <th>M2</th>
+                    <th>A2</th>
+                </tr>
+            </table>
+        </article>
+        <nav>
+            <label><input type="radio" name="pl" />Строка</label>
+            <label><input type="radio" name="pl" />Столбец</label>
+            <p>Куда?</p>
+            <select id="place">
+          <option value="1">Вверху</option>
+          <option value="2">Внизу</option>
+          <option value="Справа">Справа</option>
+          <option value="Слева">Слева</option>
+        </select>
+            <p>Строка для добавления</p>
+            <select id="words">
+          <option   value="M3">М3</option>
+          <option value="A3"> А3 </option>
+          <option value="M5"> M5 </option>
+          <option value="A4">А4</option>
+          <option value="A6">А6</option>
+        </select>
+            <button id="addInTab" onclick="add()">Добавить</button>
+            <p></p>
+            <button id="addInTab" onclick="deleteFirstRow()">
+          Удалить первую строку
+        </button>
+            <p></p>
+            <button id="addInTab" onclick="deleteLastRow()">
+          Удалить последнюю строку
+        </button>
+
+        </nav>
+    </main>
+    <footer class="txt"><br> Audi & BMW<br>International companies
+
+    </footer>
+</body>
+
+</html>
